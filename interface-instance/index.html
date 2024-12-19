@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="weather-app">
+    <header>
+      <h1>Weather App</h1>
+      <p id="location">Location: <span>-</span></p>
+    </header>
+
+    <section id="controls">
+      <input type="text" id="location-input" placeholder="Enter city or country" oninput="toggleInputs('location')" />
+      or </br>
+      <input type="number" id="lon" placeholder="Longitude" step="0.1" oninput="toggleInputs('coordinates')" /> </br>
+      <input type="number" id="lat" placeholder="Latitude" step="0.1" oninput="toggleInputs('coordinates')" />
+      <button id="fetch-weather-btn">Get Weather</button>
+      <button id="reset-btn">Reset</button>
+    </section>
+
+    <section id="current-weather">
+      <h2>Current Weather</h2>
+      <p id="temperature">Temperature: <span>-</span>°C</p>
+      <p id="conditions">Conditions: <span>-</span></p>
+    </section>
+
+    <section id="forecast">
+      <h2>5-Day Forecast</h2>
+      <div class="forecast-container" id="forecast-container"></div>
+    </section>
+
+    <section id="air-pollution">
+      <h2>Air Quality</h2>
+      <p id="aqi">AQI: <span>-</span></p>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

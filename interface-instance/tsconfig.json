@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "es2018",                        /* Modern JavaScript with native support for async/await */
+    "module": "commonjs",                      /* Module system */
+    "lib": ["dom", "es2018"],                  /* Include DOM and ECMAScript 2018 libraries */
+    "esModuleInterop": true,                   /* Ensure compatibility with CommonJS modules */
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,                            /* Enable strict type checking */
+    "skipLibCheck": true                       /* Skip type checking for declaration files */
+  }
+}
